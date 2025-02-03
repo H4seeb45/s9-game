@@ -7,12 +7,30 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Download, Smartphone, CheckCircle } from "lucide-react";
+import S9GameAndroid from "@/public/s9 game.png";
+import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "S9 Game Download APK V1.4.23 For Android",
+  description:
+    "Super S9 Game is the real earning app for Android. It allows you to play games & buy lottery tickets to win awards. Download the latest Super 9 APK from here!",
+};
 
 export default function AndroidPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-teal-600 dark:from-green-900 dark:to-teal-900 py-8 sm:py-16">
+      <section className="bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
+        <div className="mb-8 px-4 sm:px-6 lg:px-8 md:mx-0 flex flex-col justify-center">
+          <Image
+            src={S9GameAndroid}
+            alt="S9 Game image"
+            width={600}
+            height={600}
+          />
+        </div>
+
         <div className="container px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             S9 Game for Android - Latest APK Free Download
@@ -116,6 +134,14 @@ export default function AndroidPage() {
 
         {/* How to Download and Install */}
         <section>
+          <div className="mb-8 flex flex-col justify-center">
+            <Image
+              src={S9GameAndroid}
+              alt="S9 Game image"
+              width={600}
+              height={600}
+            />
+          </div>
           <h2 className="text-3xl font-bold mb-6">
             Steps to Download and Install S9 Game APK on Android
           </h2>

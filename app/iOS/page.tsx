@@ -12,12 +12,23 @@ import {
   Apple,
   SmartphoneIcon as Android,
 } from "lucide-react";
+import { Metadata } from "next";
+import Image from "next/image";
+import TrollStore from "@/public/TrollStore.webp";
+import Jailbreak from "@/public/Jailbreak-via-evasiOn.webp";
+import InstallOrImport from "@/public/Install-or-Import-S9-Game-iOS.webp";
+
+export const metadata: Metadata = {
+  title: "S9 Game for iOS | Real Money App | Latest Version",
+  description:
+    "S9 Game is a popular IOS-based card gaming platform in Pakistan that allows users to play various card games and earn real money. Super S9 Game for IOS also offers S9 rich tickets where you can buy lottery tickets and earn rewards.",
+};
 
 export default function IOSPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-900 dark:to-indigo-900 py-8 sm:py-16">
+      <section className="bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
         <div className="container px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Download Super S9 Game iOS - Latest Version (2025)
@@ -113,6 +124,21 @@ export default function IOSPage() {
 
           <Card className="mb-6">
             <CardContent className="p-6">
+              <div className="m-auto mb-4 flex md:flex-row flex-col gap-8 items-center justify-center">
+                <Image
+                  src={TrollStore}
+                  alt="S9 Game image of installing via TrollStore"
+                  width={300}
+                  height={300}
+                />
+                <Image
+                  src={InstallOrImport}
+                  alt="S9 Game image of installing via TrollStore"
+                  width={300}
+                  height={300}
+                />
+              </div>
+
               <h3 className="text-xl font-semibold mb-4">
                 Method 1: Sideloading via TrollStore
               </h3>
@@ -143,6 +169,13 @@ export default function IOSPage() {
 
           <Card>
             <CardContent className="p-6">
+              <Image
+                src={Jailbreak}
+                className="m-auto mb-4"
+                alt="S9 Game image of installing via Jailbreaking"
+                width={700}
+                height={400}
+              />
               <h3 className="text-xl font-semibold mb-4">
                 Method 2: Jailbreaking via Evasion
               </h3>

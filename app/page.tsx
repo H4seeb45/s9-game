@@ -32,12 +32,19 @@ import TeenPatti from "@/public/list of games/Teen Patti.png";
 import SportsAndLudo from "@/public/list of games/Sports and ludo.png";
 import SeabadBonanza from "@/public/list of games/Seabad Bonanza.png";
 import WingoLottery from "@/public/list of games/Wingo Lottery.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "S9 Game Download apk Latest Version in pakistan",
+  description:
+    "Super S9 Game (super 9)  is one of the greatest online gaming platforms in Pakistan, offering a variety of games including Roulette, Mines, Dragon Tiger, Blackjack, Ludo, and S9 Rich Ticket. Players can invest and earn real money while enjoying their favorite games.",
+};
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-900 dark:to-blue-900 py-8 sm:py-16">
+      <section className="bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
         <div className="container flex flex-col md:flex-row gap-4 items-center justify-center">
           <div className="md:hidden border rounded-lg border-white/20 p-4 mx-4 md:mx-0 md:p-8 flex flex-col items-center justify-center">
             <Image src={S9Game} alt="S9 Game image" width={600} height={600} />
@@ -260,10 +267,11 @@ export default function Home() {
 
         {/* S9 Lottery Section */}
         <section id="lottery" className="bg-muted p-8 rounded-lg">
-          <div className="my-4 border rounded-lg border-white/20 p-4 mx-4 md:mx-0 md:p-8 flex flex-col items-center justify-center">
+          <div className="my-4 md:mx-0 md:p-4 flex flex-col items-center justify-center">
             <Image
               src={S9Lottery}
               alt="S9 Game lottery image"
+              className="border rounded-lg border-white/20"
               width={800}
               height={600}
             />

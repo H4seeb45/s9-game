@@ -7,12 +7,22 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Download, Monitor, Layers, Zap } from "lucide-react";
+import { Metadata } from "next";
+import Image from "next/image";
+import Emulator from "@/public/Download-Emulator.webp";
+import Open from "@/public/S9-Game-for-PC-Open.webp";
+import Installed from "@/public/S9-Game-Installed-PC.webp";
 
+export const metadata: Metadata = {
+  title: "S9 Game Download APK V1.4.23 For PC",
+  description:
+    "Super S9 Game for PC is an easy way to download and play on the Windows system. Get the latest version now and play on PCs and get a lot of benefits with this real earning app 2025 in pakistan.",
+};
 export default function PCPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen p-4 md:p-0">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-900 dark:to-purple-900 py-8 sm:py-16">
+      <section className="bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
         <div className="container px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             S9 Game for PC Latest Version v1.3.92
@@ -54,6 +64,13 @@ export default function PCPage() {
 
         {/* Why Play S9 Game on PC */}
         <section>
+          <Image
+            src={Emulator}
+            alt="Image of bluestack emulator"
+            className="m-auto mb-8"
+            width={1200}
+            height={600}
+          />
           <h2 className="text-3xl font-bold mb-6">Why Play S9 Game on PC</h2>
           <p className="text-2xl font-semibold mb-4">
             Big Screen. Bigger Wins. Unmatched Thrills.
@@ -115,6 +132,13 @@ export default function PCPage() {
 
         {/* How to Download and Install */}
         <section>
+          <Image
+            src={Open}
+            alt="Image of app opening with bluestack emulator"
+            className="m-auto mb-8"
+            width={1200}
+            height={600}
+          />
           <h2 className="text-3xl font-bold mb-6">
             Steps to Download and Install the S9 Game for PC
           </h2>
@@ -175,6 +199,13 @@ export default function PCPage() {
 
         {/* How to Use */}
         <section>
+          <Image
+            src={Installed}
+            alt="Image of app opening with bluestack emulator"
+            className="m-auto mb-8"
+            width={1200}
+            height={600}
+          />
           <h2 className="text-3xl font-bold mb-6">How to Use S9 Game on PC</h2>
           <ol className="list-decimal list-inside space-y-4 text-muted-foreground">
             <li>

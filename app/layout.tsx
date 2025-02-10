@@ -35,7 +35,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col min-h-screen">
+          <div className="flex flex-col min-h-screen min-w-screen">
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />

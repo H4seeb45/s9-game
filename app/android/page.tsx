@@ -25,13 +25,14 @@ export default function AndroidPage() {
         <div className="mb-8 px-4 sm:px-6 lg:px-8 md:mx-0 flex flex-col justify-center">
           <Image
             src={S9GameAndroid}
+            className="mx-auto"
             alt="S9 Game image"
             width={600}
             height={600}
           />
         </div>
 
-        <div className="container px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             S9 Game for Android - Latest APK Free Download
           </h1>
@@ -46,7 +47,7 @@ export default function AndroidPage() {
       </section>
 
       {/* Main Content */}
-      <div className="container px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
         {/* Introduction */}
         <section>
           <p className="text-muted-foreground mb-4">
@@ -72,7 +73,7 @@ export default function AndroidPage() {
         </section>
 
         {/* Why Play S9 Game on Android */}
-        <section>
+        <section className="text-center">
           <h2 className="text-3xl font-bold mb-6">
             Why Play S9 Game on Android
           </h2>
@@ -134,7 +135,7 @@ export default function AndroidPage() {
 
         {/* How to Download and Install */}
         <section>
-          <div className="mb-8 flex flex-col justify-center">
+          <div className="mb-8 flex flex-col justify-center items-center">
             <Image
               src={S9GameAndroid}
               alt="S9 Game image"
@@ -142,7 +143,7 @@ export default function AndroidPage() {
               height={600}
             />
           </div>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Steps to Download and Install S9 Game APK on Android
           </h2>
           <p className="text-muted-foreground mb-4">
@@ -174,7 +175,7 @@ export default function AndroidPage() {
 
         {/* Installation Requirements */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Installation Requirements for S9 Game APK
           </h2>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
@@ -192,7 +193,7 @@ export default function AndroidPage() {
 
         {/* How to Play */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             How to Play Super S9 Game APK on Android
           </h2>
           <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
@@ -214,7 +215,7 @@ export default function AndroidPage() {
 
         {/* Key Features */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Key Features of S9 Game on Android
           </h2>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
@@ -226,7 +227,7 @@ export default function AndroidPage() {
 
         {/* FAQ Section */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Frequently Asked Questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -264,7 +265,7 @@ export default function AndroidPage() {
         </section>
 
         {/* Conclusion */}
-        <section>
+        <section className="text-center">
           <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
           <p className="text-muted-foreground mb-4">
             The S9 Game for Android delivers all gamers with an engaging,

@@ -28,7 +28,7 @@ export default function IOSPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
+      <section className="text-center bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
         <div className="container px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Download Super S9 Game iOS - Latest Version (2025)
@@ -44,7 +44,7 @@ export default function IOSPage() {
       </section>
 
       {/* Main Content */}
-      <div className="container px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
         {/* Introduction */}
         <section>
           <p className="text-muted-foreground mb-4">
@@ -68,7 +68,9 @@ export default function IOSPage() {
 
         {/* Why Play S9 Game on iOS? */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Why Play S9 Game on iOS?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            Why Play S9 Game on iOS?
+          </h2>
           <p className="text-2xl font-semibold mb-4">
             Play Smarter, Earn Bigger—Exclusively on iOS!
           </p>
@@ -109,7 +111,7 @@ export default function IOSPage() {
 
         {/* How to Download */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             How to Download S9 Game iOS Version
           </h2>
           <p className="text-2xl font-semibold mb-4">
@@ -209,7 +211,7 @@ export default function IOSPage() {
 
         {/* Required Specs */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Required Specs for S9 Game iOS Installation
           </h2>
           <p className="text-muted-foreground mb-4">
@@ -236,7 +238,7 @@ export default function IOSPage() {
 
         {/* Comparison */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Comparison of S9 Game iOS & Android Versions
           </h2>
           <p className="text-2xl font-semibold mb-4">
@@ -340,7 +342,7 @@ export default function IOSPage() {
 
         {/* FAQ Section */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Frequently Asked Questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -382,7 +384,7 @@ export default function IOSPage() {
         </section>
 
         {/* Conclusion */}
-        <section>
+        <section className="text-center">
           <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
           <p className="text-muted-foreground mb-4">
             More than simply gaming software, the Super S9 Game for iOS is your

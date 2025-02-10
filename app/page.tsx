@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* Main Content */}
-      <div className="container px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
         {/* What is S9 Game Section */}
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">What is S9 Game APK?</h2>

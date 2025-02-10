@@ -22,7 +22,7 @@ export default function PCPage() {
   return (
     <div className="min-h-screen p-4 md:p-0">
       {/* Hero Section */}
-      <section className="bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
+      <section className="text-center bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
         <div className="container px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             S9 Game for PC Latest Version v1.3.92
@@ -38,7 +38,7 @@ export default function PCPage() {
       </section>
 
       {/* Main Content */}
-      <div className="container px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
         {/* Introduction */}
         <section>
           <p className="text-muted-foreground mb-4">
@@ -71,7 +71,9 @@ export default function PCPage() {
             width={1200}
             height={600}
           />
-          <h2 className="text-3xl font-bold mb-6">Why Play S9 Game on PC</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            Why Play S9 Game on PC
+          </h2>
           <p className="text-2xl font-semibold mb-4">
             Big Screen. Bigger Wins. Unmatched Thrills.
           </p>
@@ -139,7 +141,7 @@ export default function PCPage() {
             width={1200}
             height={600}
           />
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Steps to Download and Install the S9 Game for PC
           </h2>
           <ol className="list-decimal list-inside space-y-4 text-muted-foreground">
@@ -184,7 +186,7 @@ export default function PCPage() {
 
         {/* Installation Requirements */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Installation Requirements for S9 Game for PC
           </h2>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
@@ -206,7 +208,9 @@ export default function PCPage() {
             width={1200}
             height={600}
           />
-          <h2 className="text-3xl font-bold mb-6">How to Use S9 Game on PC</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            How to Use S9 Game on PC
+          </h2>
           <ol className="list-decimal list-inside space-y-4 text-muted-foreground">
             <li>
               <strong>Open the S9 Game App:</strong> Open the S9 Game app using
@@ -252,7 +256,7 @@ export default function PCPage() {
 
         {/* FAQ Section */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Frequently Asked Questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -294,7 +298,7 @@ export default function PCPage() {
 
         {/* Conclusion */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Conclusion</h2>
           <p className="text-muted-foreground mb-4">
             More than just another gaming app, the S9 Game for PC is your direct
             way to fantastic gameplay, eye-catching visuals, and real earning

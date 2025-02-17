@@ -307,7 +307,7 @@ export default function PCPage() {
         </section>
 
         {/* Conclusion */}
-        <section>
+        {/* <section>
           <h2 className="text-3xl font-bold mb-6 text-center">Conclusion</h2>
           <p className="text-muted-foreground mb-4">
             More than just another gaming app, the S9 Game for PC is your direct
@@ -326,7 +326,7 @@ export default function PCPage() {
             <Download size={20} />
             Download S9 Game for PC Now
           </Button>
-        </section>
+        </section> */}
       </div>
     </div>
   );

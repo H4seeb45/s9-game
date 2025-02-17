@@ -394,7 +394,7 @@ export default function IOSPage() {
         </section>
 
         {/* Conclusion */}
-        <section className="text-center">
+        {/* <section className="text-center">
           <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
           <p className="text-muted-foreground mb-4">
             More than simply gaming software, the Super S9 Game for iOS is your
@@ -413,7 +413,7 @@ export default function IOSPage() {
             <Download size={20} />
             Download S9 Game for iOS Now
           </Button>
-        </section>
+        </section> */}
       </div>
     </div>
   );

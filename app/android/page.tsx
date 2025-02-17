@@ -7,7 +7,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Download, Smartphone, CheckCircle } from "lucide-react";
-import S9GameAndroid from "@/public/s9 game.png";
+import S9GameAndroid from "@/public/s9gameandroid.png";
+import S9GameAndroidSteps from "@/public/stepstodownloadandroid.png";
 import Image from "next/image";
 import { Metadata } from "next";
 
@@ -137,7 +138,7 @@ export default function AndroidPage() {
         <section>
           <div className="mb-8 flex flex-col justify-center items-center">
             <Image
-              src={S9GameAndroid}
+              src={S9GameAndroidSteps}
               alt="S9 Game image"
               width={600}
               height={600}

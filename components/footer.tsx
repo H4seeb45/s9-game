@@ -1,3 +1,7 @@
+import WhatsAppIcon from "./footericons/whatsapp-stroke-rounded";
+import Facebook02Icon from "./footericons/facebook-02-stroke-rounded";
+import YoutubeIcon from "./footericons/youtube-stroke-rounded";
+
 export default function Footer() {
   return (
     <footer className="px-4 md:px-12 lg:px-24 border-t bg-background">
@@ -6,25 +10,28 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-2">Support</h3>
             <ul className="space-y-2">
-              <li>
+              <li className="flex items-center space-x-2">
+                <Facebook02Icon />
                 <a
-                  href="#support"
+                  href="https://www.facebook.com/share/15fY1thQg6/"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Official Group
+                  Facebook Group
                 </a>
               </li>
-              <li>
+              <li className="flex items-center space-x-2">
+                <WhatsAppIcon />
                 <a
-                  href="#support"
+                  href="https://whatsapp.com/channel/0029VajNPNN9RZAVzf81GG0j"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   WhatsApp Support
                 </a>
               </li>
-              <li>
+              <li className="flex items-center space-x-2">
+                <YoutubeIcon />
                 <a
-                  href="#support"
+                  href="https://youtube.com/@s9richticket?si=lwuFfbt4TnVceJTb"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   YouTube Channel

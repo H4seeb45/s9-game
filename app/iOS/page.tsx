@@ -17,6 +17,7 @@ import Image from "next/image";
 import TrollStore from "@/public/TrollStore.webp";
 import Jailbreak from "@/public/Jailbreak-via-evasiOn.webp";
 import InstallOrImport from "@/public/Install-or-Import-S9-Game-iOS.webp";
+import S9GameiOS from "@/public/s9gameios.png";
 
 export const metadata: Metadata = {
   title: "S9 Game for iOS | Real Money App | Latest Version",
@@ -29,7 +30,16 @@ export default function IOSPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="text-center bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
-        <div className="container px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 px-4 sm:px-6 lg:px-8 md:mx-0 flex flex-col justify-center">
+          <Image
+            src={S9GameiOS}
+            className="mx-auto"
+            alt="S9 Game image"
+            width={800}
+            height={600}
+          />
+        </div>
+        <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Download Super S9 Game iOS - Latest Version (2025)
           </h1>

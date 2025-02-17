@@ -12,6 +12,7 @@ import Image from "next/image";
 import Emulator from "@/public/Download-Emulator.webp";
 import Open from "@/public/S9-Game-for-PC-Open.webp";
 import Installed from "@/public/S9-Game-Installed-PC.webp";
+import S9GamePC from "@/public/s9gamepc.png";
 
 export const metadata: Metadata = {
   title: "S9 Game Download APK V1.4.23 For PC",
@@ -23,7 +24,16 @@ export default function PCPage() {
     <div className="min-h-screen p-4 md:p-0">
       {/* Hero Section */}
       <section className="text-center bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
-        <div className="container px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 px-4 sm:px-6 lg:px-8 md:mx-0 flex flex-col justify-center">
+          <Image
+            src={S9GamePC}
+            className="mx-auto"
+            alt="S9 Game image"
+            width={800}
+            height={600}
+          />
+        </div>
+        <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             S9 Game for PC Latest Version v1.3.92
           </h1>

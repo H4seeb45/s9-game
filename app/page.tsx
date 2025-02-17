@@ -73,22 +73,22 @@ export default function Home() {
       {/* Main Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
         {/* What is S9 Game Section */}
-        {/* <section className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">What is S9 Game APK?</h2>
+        <section className="text-center max-w-3xl mx-auto">
+          {/* <h2 className="text-3xl font-bold mb-6">What is S9 Game APK?</h2>
           <div className="my-4 p-4 mx-4 md:mx-0 md:p-8 flex flex-col items-center justify-center">
             <Image src={S9Games} alt="S9 Game image" width={800} height={600} />
-          </div>
+          </div> */}
           <p className="text-muted-foreground mb-8">
             S9 Game APK is one of the greatest online gaming platforms in
             Pakistan, offering a variety of games including Roulette, Mines,
             Dragon Tiger, Blackjack, Ludo, and S9 Rich Ticket. Players can
             invest and earn real money while enjoying their favorite games.
           </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
+          {/* <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
             <Download size={20} />
             Download S9 Game APK
-          </Button>
-        </section> */}
+          </Button> */}
+        </section>
 
         {/* Requirements Section */}
         <section id="requirements">

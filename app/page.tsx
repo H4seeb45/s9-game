@@ -38,6 +38,7 @@ import Facebook02Icon from "@/components/footericons/facebook-02-stroke-rounded"
 import YoutubeIcon from "@/components/footericons/youtube-stroke-rounded";
 import { handleDownloadClick } from "@/lib/utils";
 import DownloadButton from "@/components/DownloadButton";
+import WhatsappIcon from "@/components/footericons/whatsapp-stroke-rounded";
 
 export const metadata: Metadata = {
   title: "S9 Game Download apk Latest Version in pakistan",
@@ -431,9 +432,14 @@ export default function Home() {
               </Card>
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2">WhatsApp</h3>
+                  <h3 className="font-semibold mb-2">WhatsApp Support</h3>
                   <Button variant="outline" className="w-full">
-                    0328-0769478
+                    <a
+                      href="https://whatsapp.com/channel/0029VajNPNN9RZAVzf81GG0j"
+                      className="flex gap-2 text-muted-foreground hover:text-foreground"
+                    >
+                      <WhatsappIcon /> WhatsApp Support
+                    </a>
                   </Button>
                 </CardContent>
               </Card>

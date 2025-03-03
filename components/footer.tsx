@@ -68,10 +68,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-2">Contact</h3>
             <p className="text-muted-foreground">WhatsApp: 0328-0769478</p>
-          </div>
+          </div> */}
         </div>
         <div className="mt-8 border-t pt-8 text-center text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} S9 Game. All rights reserved.</p>

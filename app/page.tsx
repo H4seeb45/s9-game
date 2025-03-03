@@ -36,6 +36,8 @@ import WingoLottery from "@/public/list of games/Wingo Lottery.png";
 import { Metadata } from "next";
 import Facebook02Icon from "@/components/footericons/facebook-02-stroke-rounded";
 import YoutubeIcon from "@/components/footericons/youtube-stroke-rounded";
+import { handleDownloadClick } from "@/lib/utils";
+import DownloadButton from "@/components/DownloadButton";
 
 export const metadata: Metadata = {
   title: "S9 Game Download apk Latest Version in pakistan",
@@ -59,10 +61,7 @@ export default function Home() {
             <p className="text-white/90 mb-6 sm:mb-8">
               Real Gold Latest Version (V1.3.98)
             </p>
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
-              <Download size={20} />
-              Download S9 Game APK
-            </Button>
+            <DownloadButton title="Download S9 Game APK" />
           </div>
           <div className="hidden border rounded-lg border-white/20 p-4 mx-4 md:mx-0 md:p-8 md:flex flex-col items-center justify-center">
             <Image src={S9Game} alt="S9 Game image" width={600} height={600} />

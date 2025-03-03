@@ -18,6 +18,8 @@ import TrollStore from "@/public/TrollStore.webp";
 import Jailbreak from "@/public/Jailbreak-via-evasiOn.webp";
 import InstallOrImport from "@/public/Install-or-Import-S9-Game-iOS.webp";
 import S9GameiOS from "@/public/s9gameios.png";
+import { handleDownloadClick } from "@/lib/utils";
+import DownloadButton from "@/components/DownloadButton";
 
 export const metadata: Metadata = {
   title: "S9 Game for iOS | Real Money App | Latest Version",
@@ -46,10 +48,7 @@ export default function IOSPage() {
           <p className="text-white/90 mb-6 sm:mb-8">
             Transform Your iPhone into a Profitable Tool!
           </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
-            <Download size={20} />
-            Download S9 Game for iOS
-          </Button>
+          <DownloadButton title="Download S9 Game for iOS" />
         </div>
       </section>
 

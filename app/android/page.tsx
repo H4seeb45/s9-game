@@ -11,6 +11,8 @@ import S9GameAndroid from "@/public/s9gameandroid.png";
 import S9GameAndroidSteps from "@/public/stepstodownloadandroid.png";
 import Image from "next/image";
 import { Metadata } from "next";
+import { handleDownloadClick } from "@/lib/utils";
+import DownloadButton from "@/components/DownloadButton";
 
 export const metadata: Metadata = {
   title: "S9 Game Download APK V1.4.23 For Android",
@@ -40,10 +42,7 @@ export default function AndroidPage() {
           <p className="text-white/90 mb-6 sm:mb-8">
             Transform your Android device into a gaming powerhouse!
           </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
-            <Download size={20} />
-            Download S9 Game APK
-          </Button>
+          <DownloadButton title="Download S9 Game APK" />
         </div>
       </section>
 

@@ -13,6 +13,8 @@ import Emulator from "@/public/Download-Emulator.webp";
 import Open from "@/public/S9-Game-for-PC-Open.webp";
 import Installed from "@/public/S9-Game-Installed-PC.webp";
 import S9GamePC from "@/public/s9gamepc.png";
+import { handleDownloadClick } from "@/lib/utils";
+import DownloadButton from "@/components/DownloadButton";
 
 export const metadata: Metadata = {
   title: "S9 Game Download APK V1.4.23 For PC",
@@ -40,10 +42,7 @@ export default function PCPage() {
           <p className="text-white/90 mb-6 sm:mb-8">
             Unleash Gaming Like Never Before - Now on the Big Screen!
           </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
-            <Download size={20} />
-            Download S9 Game for PC
-          </Button>
+          <DownloadButton title="Download S9 Game for PC" />
         </div>
       </section>
 

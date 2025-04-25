@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Play and earn with S9 Game APK - The best gaming platform in Pakistan",
     type: "website",
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
+  },
 };
 
 export default function RootLayout({

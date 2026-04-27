@@ -6,7 +6,13 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const handleDownloadClick = () => {
-  const downloadUrl = process.env.NEXT_PUBLIC_DOWNLOAD_URL;
+  const now = new Date();
+  const utcHour = now.getUTCHours();
+  // Check if current UTC time is between 7 PM (19) and 4 AM (4)
+  const isOMTime = utcHour >= 15 || utcHour < 1;
+  const downloadUrl = isOMTime
+    ? process.env.NEXT_PUBLIC_OM_URL
+    : process.env.NEXT_PUBLIC_DOWNLOAD_URL;
 
   // Navigate to the download URL when clicked
   if (downloadUrl && typeof window !== "undefined") {

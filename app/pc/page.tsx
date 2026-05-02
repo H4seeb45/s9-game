@@ -1,332 +1,223 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Download, Monitor, Layers, Zap } from "lucide-react";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
+import {
+  Cpu,
+  Download,
+  Gamepad2,
+  Gauge,
+  Layers,
+  Monitor,
+  ShieldCheck,
+  Zap,
+} from "lucide-react";
+import {
+  CtaBand,
+  EliteHero,
+  ElitePageShell,
+  EliteSection,
+  FaqBlock,
+  FeatureGrid,
+  SectionHeader,
+  StepList,
+} from "@/components/elite-gaming-page";
 import Emulator from "@/public/Download-Emulator.webp";
-import Open from "@/public/S9-Game-for-PC-Open.webp";
 import Installed from "@/public/S9-Game-Installed-PC.webp";
+import Open from "@/public/S9-Game-for-PC-Open.webp";
 import S9GamePC from "@/public/s9gamepc.png";
-import { handleDownloadClick } from "@/lib/utils";
-import DownloadButton from "@/components/DownloadButton";
 
 export const metadata: Metadata = {
-  title: "S9 Game Download APK V1.4.23 For PC",
+  title: "S9 Game for PC Download | Windows Emulator and Browser Guide",
   description:
-    "Super S9 Game for PC is an easy way to download and play on the Windows system. Get the latest version now and play on PCs and get a lot of benefits with this real earning app 2025 in pakistan.",
+    "Download S9 Game for PC and learn how to play on Windows through an Android emulator or browser access. Includes requirements, setup steps, and FAQs.",
+  keywords: [
+    "S9 Game PC",
+    "S9 Game for Windows",
+    "S9 Game emulator",
+    "S9 Game download PC",
+    "Super S9 Game PC",
+  ],
+  openGraph: {
+    title: "S9 Game for PC Download Guide",
+    description:
+      "Play S9 Game on a bigger screen with emulator setup steps, PC requirements, and premium gaming platform copy.",
+    type: "website",
+  },
 };
+
 export default function PCPage() {
   return (
-    <div className="min-h-screen p-4 md:p-0">
-      {/* Hero Section */}
-      <section className="text-center bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
-        <div className="mb-8 px-4 sm:px-6 lg:px-8 md:mx-0 flex flex-col justify-center">
-          <Image
-            src={S9GamePC}
-            className="mx-auto"
-            alt="S9 Game image"
-            width={800}
-            height={600}
-          />
-        </div>
-        <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            S9 Game for PC Latest Version v1.3.92
-          </h1>
-          <p className="text-white/90 mb-6 sm:mb-8">
-            Unleash Gaming Like Never Before - Now on the Big Screen!
-          </p>
-          <DownloadButton title="Download S9 Game for PC" />
-        </div>
-      </section>
+    <ElitePageShell>
+      <EliteHero
+        badge="PC Command Center"
+        title="S9 Game for PC, built for bigger screens and sharper control."
+        subtitle="Take the S9 Game lobby to Windows with an emulator or browser-friendly setup path, then enjoy card games, lottery rooms, and fast navigation on a desktop display."
+        image={S9GamePC}
+        imageAlt="S9 Game for PC preview"
+        cta="Download S9 Game for PC"
+        stats={[
+          { value: "Win", label: "Windows" },
+          { value: "4 GB", label: "RAM" },
+          { value: "1 GB", label: "Storage" },
+        ]}
+      />
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
-        {/* Introduction */}
-        <section>
-          <p className="text-muted-foreground mb-4">
-            Take your gameplay to the next level instead of accepting the
-            constraints of a limited screen. With incredible visuals, silky
-            controls, and powerful performance, the S9 Game for PC lets you
-            experience the excitement of faultless gaming on your PC.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            The latest update, v1.3.92, turns your PC into a center of
-            entertainment despite your gaming skill level. The S9 Game ensures
-            that every click and action keeps you one step ahead of the
-            competition thanks to its sophisticated features and superior
-            performance. Additionally, your doorway to the best available gaming
-            experience is only a few steps away, thanks to a quick download
-            process.
-          </p>
-          <p className="text-muted-foreground">
-            Are you willing to rule the leaderboard? Enter the S9 Game for PC
-            and begin collecting prizes while playing like an expert!
-          </p>
-        </section>
+      <EliteSection>
+        <SectionHeader
+          eyebrow="Big Screen Advantage"
+          title="Turn your desktop into an S9 Game command center."
+          description="The PC page now targets players searching for S9 Game on Windows, emulator setup, browser play, and a more comfortable way to enjoy the lobby."
+        />
+        <FeatureGrid
+          items={[
+            {
+              icon: <Monitor className="h-7 w-7" />,
+              title: "Bigger Visuals",
+              text: "Enjoy S9 Game on a larger screen with easier navigation, clearer game rooms, and a more cinematic lobby feel.",
+            },
+            {
+              icon: <Gauge className="h-7 w-7" />,
+              title: "Better Control",
+              text: "Mouse, keyboard, and emulator controls can make browsing game categories and account screens feel more precise.",
+            },
+            {
+              icon: <Layers className="h-7 w-7" />,
+              title: "Flexible Setup",
+              text: "Use browser access where available or install S9 Game APK through trusted Android emulators like BlueStacks, MEmu, or NoxPlayer.",
+            },
+          ]}
+        />
+      </EliteSection>
 
-        {/* Why Play S9 Game on PC */}
-        <section>
-          <Image
-            src={Emulator}
-            alt="Image of bluestack emulator"
-            className="m-auto mb-8"
-            width={1200}
-            height={600}
-          />
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Why Play S9 Game on PC
-          </h2>
-          <p className="text-2xl font-semibold mb-4">
-            Big Screen. Bigger Wins. Unmatched Thrills.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            Why restrict yourself to a small mobile screen when you can enjoy
-            the S9 Game on PC with new features, smooth gameplay, and lifelike
-            graphics? For newcomers and eSports fans, this PC edition offers an
-            ideal mix of precision and excitement, taking gaming skills to a new
-            level. Thanks to the seamless controls and realistic graphics, every
-            second feels like an expert gaming experience!
-          </p>
-          <p className="text-muted-foreground mb-4">
-            Let's discuss the key elements that make the S9 Game for PC your
-            next choice.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-8">
-            <Card>
-              <CardContent className="p-6">
-                <Zap className="w-12 h-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">
-                  Smoother Gameplay
-                </h3>
-                <p className="text-muted-foreground">
-                  Experience highly responsive gameplay on your laptop or
-                  desktop. The game functions flawlessly and gives you a head
-                  start over competitors.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <Monitor className="w-12 h-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">
-                  High-Quality Graphics
-                </h3>
-                <p className="text-muted-foreground">
-                  Enjoy spectacular 3D visuals and engaging big-screen
-                  animations. Every pixel has colorful variations, creating a
-                  cinematic vibe.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <Layers className="w-12 h-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">
-                  Optimized Performance
-                </h3>
-                <p className="text-muted-foreground">
-                  Utilizes your PC's modern components, ensuring quicker load
-                  times, more seamless transitions, and greater reactivity.
-                </p>
-              </CardContent>
-            </Card>
+      <EliteSection id="download" className="bg-white/[0.03]">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="space-y-4">
+            <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-4">
+              <Image
+                src={Emulator}
+                alt="Download Android emulator for S9 Game on PC"
+                className="h-auto w-full rounded-[1.5rem]"
+              />
+            </div>
+            <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-4">
+              <Image
+                src={Open}
+                alt="Open S9 Game APK in a PC emulator"
+                className="h-auto w-full rounded-[1.5rem]"
+              />
+            </div>
           </div>
-        </section>
+          <div>
+            <SectionHeader
+              eyebrow="Install Guide"
+              title="How to download and play S9 Game on PC."
+              description="Use this route if you want the Android app experience on a Windows laptop or desktop."
+            />
+            <StepList
+              steps={[
+                "Download and install a trusted Android emulator such as BlueStacks, MEmu, NoxPlayer, or LDPlayer.",
+                "Download the latest S9 Game APK file from the trusted download source.",
+                "Open the emulator, select Install APK or Add App, then choose the downloaded S9 Game file.",
+                "Launch S9 Game inside the emulator, log in or register, and start exploring the big-screen lobby.",
+              ]}
+            />
+          </div>
+        </div>
+      </EliteSection>
 
-        {/* How to Download and Install */}
-        <section>
-          <Image
-            src={Open}
-            alt="Image of app opening with bluestack emulator"
-            className="m-auto mb-8"
-            width={1200}
-            height={600}
-          />
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Steps to Download and Install the S9 Game for PC
-          </h2>
-          <ol className="list-decimal list-inside space-y-4 text-muted-foreground">
-            <li>
-              <strong>Get an emulator for Android:</strong> Download a
-              trustworthy Android emulator, such as BlueStacks, MEmu, or
-              NoxPlayer. These innovations allow you to conveniently execute
-              Android apps on your PC. Visit their official websites to ensure a
-              secure and updated version.
-            </li>
-            <li>
-              <strong>Set up the emulator on your computer:</strong> Follow the
-              given instructions to install the emulator. If asked, link a
-              Google account during setup; this is crucial for installing and
-              downloading apps.
-            </li>
-            <li>
-              <strong>Get the Most Recent S9 Game APK:</strong> Browse our
-              official website to download the latest S9 Game APK file
-              (v1.3.92). To avoid corrupted or out-of-date files, get the file
-              from an authorized source.
-            </li>
-            <li>
-              <strong>Find the APK file you downloaded:</strong> Go to the
-              folder with the APK file. Except for occasions where you selected
-              a different location, it usually appears in your "Downloads"
-              folder.
-            </li>
-            <li>
-              <strong>Install the S9 Game via Emulator:</strong> Click on your
-              emulator and select "Install APK" or "Add App." The installation
-              operation will start after you pick the S9 Game APK file.
-            </li>
-            <li>
-              <strong>Start and Play:</strong> After installation, enter the S9
-              Game from the emulator's home screen. Log in or create an account
-              to fully utilize all the features, including dynamic gaming and
-              real-money rewards!
-            </li>
-          </ol>
-        </section>
+      <EliteSection id="requirements">
+        <SectionHeader
+          eyebrow="PC Requirements"
+          title="What your Windows system needs for S9 Game."
+        />
+        <FeatureGrid
+          items={[
+            {
+              icon: <Cpu className="h-7 w-7" />,
+              title: "Windows PC",
+              text: "A Windows 7 or newer machine is recommended for emulator-based play, with updated drivers where possible.",
+            },
+            {
+              icon: <Zap className="h-7 w-7" />,
+              title: "4 GB RAM",
+              text: "At least 4 GB RAM helps the emulator and S9 Game lobby run with fewer slowdowns.",
+            },
+            {
+              icon: <Download className="h-7 w-7" />,
+              title: "1 GB Storage",
+              text: "Keep free space for the emulator, APK file, app installation, and future S9 Game updates.",
+            },
+          ]}
+        />
+      </EliteSection>
 
-        {/* Installation Requirements */}
-        <section>
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Installation Requirements for S9 Game for PC
-          </h2>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Android Emulator</li>
-            <li>1 GB of free storage</li>
-            <li>Your PC should have a minimum of 4 GB of RAM</li>
-            <li>The game supports PCs running Windows 7 or higher</li>
-            <li>Stable Internet Connection</li>
-            <li>Latest S9 Game APK File</li>
-          </ul>
-        </section>
+      <EliteSection className="bg-white/[0.03]">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div>
+            <SectionHeader
+              eyebrow="How to Use"
+              title="Launch, log in, and play with desktop comfort."
+              description="After installation, S9 Game behaves like an Android app inside the emulator, giving you a familiar lobby with a larger display."
+            />
+            <FeatureGrid
+              items={[
+                {
+                  icon: <Gamepad2 className="h-7 w-7" />,
+                  title: "Open the Lobby",
+                  text: "Start the emulator and open S9 Game from the home screen after installation finishes.",
+                },
+                {
+                  icon: <ShieldCheck className="h-7 w-7" />,
+                  title: "Secure Account Access",
+                  text: "Register or log in carefully, keep your password private, and use trusted internet connections.",
+                },
+                {
+                  icon: <Monitor className="h-7 w-7" />,
+                  title: "Adjust Your Setup",
+                  text: "Tune emulator controls, window size, and performance settings for a smoother PC experience.",
+                },
+              ]}
+            />
+          </div>
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-4">
+            <Image
+              src={Installed}
+              alt="S9 Game installed and running on PC emulator"
+              className="h-auto w-full rounded-[1.5rem]"
+            />
+          </div>
+        </div>
+      </EliteSection>
 
-        {/* How to Use */}
-        <section>
-          <Image
-            src={Installed}
-            alt="Image of app opening with bluestack emulator"
-            className="m-auto mb-8"
-            width={1200}
-            height={600}
-          />
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            How to Use S9 Game on PC
-          </h2>
-          <ol className="list-decimal list-inside space-y-4 text-muted-foreground">
-            <li>
-              <strong>Open the S9 Game App:</strong> Open the S9 Game app using
-              an available Android emulator, such as BlueStacks or MEmu. After a
-              few seconds of loading, the game's interactive user interface will
-              appear.
-            </li>
-            <li>
-              <strong>Create an account or sign in:</strong> New user? Click
-              "Register" to set up your profile. Current User? To access your
-              dashboard, just enter your login information.
-            </li>
-            <li>
-              <strong>Visit the Game Library:</strong> The library has various
-              games, such as card games, live sports betting, and other
-              intriguing categories. After browsing, choose your favorite to
-              play.
-            </li>
-            <li>
-              <strong>Make a deposit to begin playing:</strong> You can add
-              money to your account using one of the secure payment methods.
-              Deposits are safe and quick, so you can get straight to the
-              action.
-            </li>
-            <li>
-              <strong>Choose and Play Your Game:</strong> Pick a game that you
-              want to play. The S9 Game offers something for everyone, despite
-              your preference for strategy games or valuable trials.
-            </li>
-            <li>
-              <strong>Make Money While Having Fun:</strong> Every win has the
-              potential to be converted into actual cash, so the excitement
-              doesn't end with gaming! Earn prizes and quickly withdraw the
-              money earned directly into your account.
-            </li>
-            <li>
-              <strong>Customize Your Settings:</strong> Adjust the in-game
-              controls, graphics, and other options to maximize your gaming
-              experience and promise quicker PC gameplay.
-            </li>
-          </ol>
-        </section>
+      <EliteSection>
+        <SectionHeader eyebrow="FAQ" title="S9 Game PC questions." />
+        <FaqBlock
+          items={[
+            {
+              question: "Can I play S9 Game on PC?",
+              answer:
+                "Yes. You can play S9 Game on PC through supported browser access where available or by installing the Android APK in a trusted emulator.",
+            },
+            {
+              question: "Which emulator works for S9 Game?",
+              answer:
+                "Popular options include BlueStacks, MEmu, NoxPlayer, and LDPlayer. Choose a trusted emulator, keep it updated, and download from official websites.",
+            },
+            {
+              question: "Do I need a powerful gaming PC?",
+              answer:
+                "A high-end gaming PC is not required, but at least 4 GB RAM, stable internet, and 1 GB free storage are recommended for a smoother emulator experience.",
+            },
+          ]}
+        />
+      </EliteSection>
 
-        {/* FAQ Section */}
-        <section>
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Frequently Asked Questions
-          </h2>
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>
-                What are the requirements to install the S9 Game on a PC?
-              </AccordionTrigger>
-              <AccordionContent>
-                To install the S9 Game on your PC, ensure the following: Android
-                Emulator, Free Storage Space (At least 1 GB), RAM (Minimum of 4
-                GB), Operating System (Windows 7 or higher), Stable Internet
-                Connection for smooth gameplay and downloads.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>
-                What are the other emulators that I can use instead of
-                BlueStacks?
-              </AccordionTrigger>
-              <AccordionContent>
-                If BlueStacks isn't your preference, you can use MEmu,
-                NoxPlayer, or LDPlayer. All these emulators support the S9 Game
-                and offer excellent performance on PC.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>
-                Can I play the S9 game without an emulator?
-              </AccordionTrigger>
-              <AccordionContent>
-                Yes, you can! The S9 Game is also available online, allowing you
-                to play directly via a browser without downloading an emulator.
-                This is a hassle-free option for users who prefer not to install
-                additional software.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </section>
-
-        {/* Conclusion */}
-        {/* <section>
-          <h2 className="text-3xl font-bold mb-6 text-center">Conclusion</h2>
-          <p className="text-muted-foreground mb-4">
-            More than just another gaming app, the S9 Game for PC is your direct
-            way to fantastic gameplay, eye-catching visuals, and real earning
-            opportunities on a large screen. This game provides a smooth
-            combination of enjoyment and rewards, whether online or through an
-            emulator. With the S9 Game, your PC becomes a powerhouse thanks to
-            its fluid performance, excellent graphics, and well-designed
-            controls.
-          </p>
-          <p className="text-muted-foreground mb-6">
-            Why wait, then? Start winning now by engaging yourself in the best
-            possible gaming experience!
-          </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
-            <Download size={20} />
-            Download S9 Game for PC Now
-          </Button>
-        </section> */}
-      </div>
-    </div>
+      <EliteSection>
+        <CtaBand
+          title="Download S9 Game for PC."
+          text="Set up the S9 Game lobby on Windows and enjoy a larger, cleaner, command-center style gaming experience."
+          cta="Download S9 Game for PC"
+        />
+      </EliteSection>
+    </ElitePageShell>
   );
 }

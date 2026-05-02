@@ -20,9 +20,9 @@ export const metadata: Metadata = {
       "Play and earn with S9 Game APK - The best gaming platform in Pakistan",
     type: "website",
   },
-  verification: {
-    google: "l7cEoL7p1lywcr5SvgkWEhn2735lLNWwkVGx6VdCWHA",
-  },
+  // verification: {
+  //   google: "l7cEoL7p1lywcr5SvgkWEhn2735lLNWwkVGx6VdCWHA",
+  // },
 };
 
 export default function RootLayout({
@@ -32,13 +32,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        {/* Add Google Site Verification Meta Tag */}
-        <meta
-          name="google-site-verification"
-          content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
-        />
-      </Head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

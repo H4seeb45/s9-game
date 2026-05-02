@@ -1,27 +1,29 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://supers9games.com/";
+
   return [
     {
-      url: "https://https://s9-game.vercel.app",
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://https://s9-game.vercel.app/android",
+      url: `${baseUrl}/android`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://https://s9-game.vercel.app/pc",
+      url: `${baseUrl}/pc`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,
     },
     {
-      url: "https://https://s9-game.vercel.app/iOS",
+      url: `${baseUrl}/iOS`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.3,

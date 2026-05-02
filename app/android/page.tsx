@@ -1,290 +1,203 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import type { Metadata } from "next";
+import Image from "next/image";
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Download, Smartphone, CheckCircle } from "lucide-react";
+  BadgeCheck,
+  Download,
+  Gauge,
+  Gamepad2,
+  ShieldCheck,
+  Smartphone,
+  Zap,
+} from "lucide-react";
+import {
+  CtaBand,
+  EliteHero,
+  ElitePageShell,
+  EliteSection,
+  FaqBlock,
+  FeatureGrid,
+  SectionHeader,
+  StepList,
+} from "@/components/elite-gaming-page";
 import S9GameAndroid from "@/public/s9gameandroid.png";
 import S9GameAndroidSteps from "@/public/stepstodownloadandroid.png";
-import Image from "next/image";
-import { Metadata } from "next";
-import { handleDownloadClick } from "@/lib/utils";
-import DownloadButton from "@/components/DownloadButton";
 
 export const metadata: Metadata = {
-  title: "S9 Game Download APK V1.4.23 For Android",
+  title: "S9 Game APK Download for Android | Latest Version",
   description:
-    "Super S9 Game is the real earning app for Android. It allows you to play games & buy lottery tickets to win awards. Download the latest Super 9 APK from here!",
+    "Download S9 Game APK latest version for Android. Get installation steps, requirements, safety tips, and features for the Super S9 Game mobile gaming app.",
+  keywords: [
+    "S9 Game APK download",
+    "S9 Game Android",
+    "Super S9 Game APK",
+    "S9 Game latest version",
+    "Android gaming app Pakistan",
+  ],
+  openGraph: {
+    title: "S9 Game APK Download for Android",
+    description:
+      "Install the latest S9 Game APK on Android with a fast guide, clear requirements, and premium gaming features.",
+    type: "website",
+  },
 };
 
 export default function AndroidPage() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-[url('/s9-game-banner.webp')] bg-no-repeat bg-cover bg-center bg-fixed py-8 sm:py-16">
-        <div className="mb-8 px-4 sm:px-6 lg:px-8 md:mx-0 flex flex-col justify-center">
-          <Image
-            src={S9GameAndroid}
-            className="mx-auto"
-            alt="S9 Game image"
-            width={600}
-            height={600}
-          />
-        </div>
+    <ElitePageShell>
+      <EliteHero
+        badge="Android APK Arena"
+        title="S9 Game APK for Android, tuned for fast mobile play."
+        subtitle="Download the latest S9 Game APK and bring a polished casino-style lobby, card games, lottery action, and smooth account access to your Android phone."
+        image={S9GameAndroid}
+        imageAlt="S9 Game Android APK app preview"
+        cta="Download S9 Game APK"
+        stats={[
+          { value: "APK", label: "Android File" },
+          { value: "5.0+", label: "Android" },
+          { value: "Fast", label: "Install" },
+        ]}
+      />
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            S9 Game for Android - Latest APK Free Download
-          </h1>
-          <p className="text-white/90 mb-6 sm:mb-8">
-            Transform your Android device into a gaming powerhouse!
-          </p>
-          <DownloadButton title="Download S9 Game APK" />
-        </div>
-      </section>
+      <EliteSection>
+        <SectionHeader
+          eyebrow="Why Android Players Choose It"
+          title="Mobile-first gaming with a lobby that feels ready for match day."
+          description="S9 Game for Android is designed for players who want quick access, responsive screens, and a clear path from download to play."
+        />
+        <FeatureGrid
+          items={[
+            {
+              icon: <Smartphone className="h-7 w-7" />,
+              title: "Pocket-Ready Lobby",
+              text: "Open S9 Game on your Android device and jump into card games, quick rounds, lottery options, and account tools from one clean app.",
+            },
+            {
+              icon: <Gauge className="h-7 w-7" />,
+              title: "Optimized Performance",
+              text: "The Android APK guide focuses on smooth setup, stable internet, and enough storage so the app can run with fewer interruptions.",
+            },
+            {
+              icon: <ShieldCheck className="h-7 w-7" />,
+              title: "Trusted Download Flow",
+              text: "Follow a clear installation path and download from trusted sources to keep the APK setup simple and safer.",
+            },
+          ]}
+        />
+      </EliteSection>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 space-y-12 sm:space-y-24">
-        {/* Introduction */}
-        <section>
-          <p className="text-muted-foreground mb-4">
-            Are you trying to find a terrific gaming experience that is close to
-            your fingers? The Android S9 Game is here to transform how you play
-            games ultimately. With an extensive variety of games, easy
-            navigation, and a strong earning system, this app guarantees that
-            you will have entertainment and make money.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            The S9 Game APK includes a user-friendly interface, modern visuals,
-            and quick, reliable transactions, whether you're a moderate gamer or
-            someone who enjoys competition. This Android-optimized gaming
-            platform is made to provide an excellent gaming experience on your
-            device, even if it's not the newest model, so forget about delays or
-            tricky setups.
-          </p>
-          <p className="text-muted-foreground">
-            Why wait? Get the S9 Game APK immediately to turn your regular
-            gaming sessions into an exciting adventure with many chances to win
-            big!
-          </p>
-        </section>
-
-        {/* Why Play S9 Game on Android */}
-        <section className="text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Why Play S9 Game on Android
-          </h2>
-          <p className="text-2xl font-semibold mb-4">
-            Unmatched Convenience, Effortless Fun!
-          </p>
-          <p className="text-muted-foreground mb-4">
-            The S9 Game for Android offers hours of entertainment and real-money
-            rewards. It gives players an unusual gaming experience worldwide and
-            is optimized for Android devices. Whether you're a seasonal gamer or
-            a daily pro, the features of the S9 Game APK make it a top pick for
-            mobile gaming.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            Some of the core features are listed below!
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-8">
-            <Card>
-              <CardContent className="p-6">
-                <Smartphone className="w-12 h-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">
-                  Accessible Anytime, Anywhere
-                </h3>
-                <p className="text-muted-foreground">
-                  Enjoy your favorite games whenever and wherever you choose.
-                  The app's small size ensures smooth performance even on
-                  affordable Android smartphones.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <CheckCircle className="w-12 h-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">
-                  Optimized for Android Devices
-                </h3>
-                <p className="text-muted-foreground">
-                  Experience lag-free gameplay and immersive graphics, even on
-                  affordable Android smartphones. Your device can easily manage
-                  multiplayer games and live sports betting.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <Download className="w-12 h-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">
-                  Simple Installation Process
-                </h3>
-                <p className="text-muted-foreground">
-                  No complicated settings or technical knowledge required! The
-                  S9 Game APK is easy to install with just a few taps.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* How to Download and Install */}
-        <section>
-          <div className="mb-8 flex flex-col justify-center items-center">
+      <EliteSection id="download" className="bg-white/[0.03]">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-4">
             <Image
               src={S9GameAndroidSteps}
-              alt="S9 Game image"
-              width={600}
-              height={600}
+              alt="Steps to download and install S9 Game APK on Android"
+              className="h-auto w-full rounded-[1.5rem]"
             />
           </div>
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Steps to Download and Install S9 Game APK on Android
-          </h2>
-          <p className="text-muted-foreground mb-4">
-            Here's your ultimate guide to getting started:
-          </p>
-          <ol className="list-decimal list-inside space-y-4 text-muted-foreground">
-            <li>
-              <strong>Allow Unknown Sources:</strong> Go to Settings - Security
-              or Privacy and enable "Unknown Sources".
-            </li>
-            <li>
-              <strong>Download the S9 Game APK:</strong> Visit our official
-              website and click the download link.
-            </li>
-            <li>
-              <strong>Locate the APK file:</strong> Open your File Manager or
-              Downloads folder and find the S9 Game APK file.
-            </li>
-            <li>
-              <strong>Install the APK:</strong> Tap on the APK file and follow
-              the prompts to install.
-            </li>
-            <li>
-              <strong>Launch and play:</strong> Open the app, create an account
-              or log in, and start playing!
-            </li>
-          </ol>
-        </section>
+          <div>
+            <SectionHeader
+              eyebrow="Install Guide"
+              title="How to download and install S9 Game APK on Android."
+              description="Follow the steps below to move from download to the gaming lobby without guesswork."
+            />
+            <StepList
+              steps={[
+                "Tap Download S9 Game APK and wait for the Android installation file to finish downloading.",
+                "Open your Downloads folder or browser notification and select the S9 Game APK file.",
+                "Allow installation from trusted sources if Android asks for permission during setup.",
+                "Install the app, open S9 Game, then register or log in to enter the lobby.",
+              ]}
+            />
+          </div>
+        </div>
+      </EliteSection>
 
-        {/* Installation Requirements */}
-        <section>
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Installation Requirements for S9 Game APK
-          </h2>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>
-              Ensure your device has at least 500 MB of free storage before
-              installation.
-            </li>
-            <li>Keep your Android version updated for optimal performance.</li>
-            <li>
-              Use a secure internet connection to avoid any issues during the
-              download.
-            </li>
-          </ul>
-        </section>
+      <EliteSection id="requirements">
+        <SectionHeader
+          eyebrow="Requirements"
+          title="What your Android phone needs before launch."
+        />
+        <FeatureGrid
+          items={[
+            {
+              icon: <Download className="h-7 w-7" />,
+              title: "Latest APK File",
+              text: "Use the newest S9 Game APK so you get the latest lobby updates, game access, and installation compatibility.",
+            },
+            {
+              icon: <Zap className="h-7 w-7" />,
+              title: "Stable Internet",
+              text: "A reliable connection helps downloads finish correctly and keeps game rooms responsive after login.",
+            },
+            {
+              icon: <BadgeCheck className="h-7 w-7" />,
+              title: "Enough Storage",
+              text: "Keep at least 500 MB free before installation so Android has room to download, verify, and install the app.",
+            },
+          ]}
+        />
+      </EliteSection>
 
-        {/* How to Play */}
-        <section>
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            How to Play Super S9 Game APK on Android
-          </h2>
-          <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-            <li>
-              Launch the Game: Open the S9 Game app from your home screen.
-            </li>
-            <li>
-              Sign Up or Log In: Register if you're new or log into your
-              existing account.
-            </li>
-            <li>Choose a Game: Pick from a variety of exciting games.</li>
-            <li>
-              Place Your Bet or Play: Start playing by depositing for bets or
-              enjoying casual games.
-            </li>
-            <li>Play & Earn: Win games and earn real money rewards.</li>
-          </ol>
-        </section>
+      <EliteSection className="bg-white/[0.03]">
+        <SectionHeader
+          eyebrow="Game Experience"
+          title="A compact Android app with big-lobby energy."
+          description="Players can explore popular S9 Game modes, manage account access, and move through the app with straightforward navigation."
+        />
+        <FeatureGrid
+          items={[
+            {
+              icon: <Gamepad2 className="h-7 w-7" />,
+              title: "Popular Game Rooms",
+              text: "Play familiar card, casino-style, sports, ludo, and lottery formats from a mobile-friendly interface.",
+            },
+            {
+              icon: <Gauge className="h-7 w-7" />,
+              title: "Smooth Navigation",
+              text: "Clear menus help new users find registration, login, game categories, and account options quickly.",
+            },
+            {
+              icon: <ShieldCheck className="h-7 w-7" />,
+              title: "Responsible Access",
+              text: "Use real-money features carefully, follow local rules, and keep your account details secure.",
+            },
+          ]}
+        />
+      </EliteSection>
 
-        {/* Key Features */}
-        <section>
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Key Features of S9 Game on Android
-          </h2>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>User-Friendly Interface</li>
-            <li>Wide Variety of Games</li>
-            <li>Smooth Transactions and Payouts</li>
-          </ul>
-        </section>
+      <EliteSection>
+        <SectionHeader
+          eyebrow="FAQ"
+          title="S9 Game Android APK questions."
+        />
+        <FaqBlock
+          items={[
+            {
+              question: "Is S9 Game available as an Android APK?",
+              answer:
+                "Yes. This Android page is built around the S9 Game APK download, installation permissions, and launch steps for Android phones.",
+            },
+            {
+              question: "What Android version is recommended?",
+              answer:
+                "Android 5.0 or newer is recommended for a smoother experience, along with stable internet and enough free storage.",
+            },
+            {
+              question: "Why does Android ask for unknown source permission?",
+              answer:
+                "APK files downloaded outside an app store may require manual permission. Only allow it when you trust the source and are ready to install S9 Game.",
+            },
+          ]}
+        />
+      </EliteSection>
 
-        {/* FAQ Section */}
-        <section>
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Frequently Asked Questions
-          </h2>
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>
-                Is S9 Game Safe to Download on Android?
-              </AccordionTrigger>
-              <AccordionContent>
-                Yes, S9 Game is safe to download from trusted sources. Ensure
-                you're downloading the APK from an official website to avoid any
-                security issues and enjoy a smooth, secure gaming experience.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>
-                What Android Version Is Required for S9 Game?
-              </AccordionTrigger>
-              <AccordionContent>
-                The S9 Game requires Android 5.0 or higher for optimal
-                performance. Ensure your device meets the requirements to enjoy
-                seamless gameplay and full functionality.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>
-                Can I Earn Money with S9 Game on Android?
-              </AccordionTrigger>
-              <AccordionContent>
-                S9 Game allows you to earn real money by playing various games.
-                Win games, complete challenges, and withdraw your earnings
-                directly to your bank account or preferred payment method.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </section>
-
-        {/* Conclusion */}
-        <section className="text-center">
-          <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
-          <p className="text-muted-foreground mb-4">
-            The S9 Game for Android delivers all gamers with an engaging,
-            accessible, and profitable gaming experience. The game offers smooth
-            integration with your Android device, whether you want to make real
-            money or enjoy top-notch gameplay. It's time to upgrade your mobile
-            gaming experience with its simple installation, seamless operation,
-            and many money-making options.
-          </p>
-          <p className="text-muted-foreground mb-6">
-            Don't hesitate; get the S9 Game APK now and begin playing to win
-            rewards!
-          </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white gap-2">
-            <Download size={20} />
-            Download S9 Game APK Now
-          </Button>
-        </section>
-      </div>
-    </div>
+      <EliteSection>
+        <CtaBand
+          title="Download S9 Game APK for Android."
+          text="Get the latest Android version, install it in minutes, and enter the S9 Game lobby with a faster, cleaner mobile experience."
+          cta="Download S9 Game APK"
+        />
+      </EliteSection>
+    </ElitePageShell>
   );
 }
